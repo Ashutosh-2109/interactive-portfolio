@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #020617;
+    color: #e5e7eb;
+}
+
+section {
+    padding: 90px 10%;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.glow {
+    color: #38bdf8;
+    text-shadow: 0 0 20px rgba(56,189,248,0.6);
+}
+
+.typing-text {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    opacity: 0.85;
+}
+
+.links {
+    margin-top: 25px;
+}
+
+.links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+
+.scroll-indicator {
+    margin-top: 50px;
+    opacity: 0.6;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(12px); }
+}
+
+/* SKILLS */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #020617;
+    border: 1px solid #1e293b;
+    padding: 25px;
+    text-align: center;
+    border-radius: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(56,189,248,0.3);
+}
+
+/* PROFILES */
+.profile-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.profile-card {
+    width: 260px;
+    height: 160px;
+    background: linear-gradient(145deg, #020617, #111827);
+    border-radius: 18px;
+    padding: 25px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+}
+
+.profile-card h3 {
+    color: #38bdf8;
+    font-size: 1.6rem;
+}
+
+.profile-card p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.profile-card:hover {
+    box-shadow: 0 30px 60px rgba(56,189,248,0.45);
+}
+
+/* THREE JS */
+.three-container {
+    text-align: center;
+}
+
+#three-scene {
+    width: 100%;
+    height: 420px;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: #38bdf8;
+    text-decoration: none;
+}

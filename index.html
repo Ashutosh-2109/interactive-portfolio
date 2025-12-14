@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashutosh Pandey | Interactive Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Hi, I'm <span class="glow">Ashutosh Pandey</span></h1>
+
+        <p class="typing-text" id="typing"></p>
+
+        <div class="links">
+            <a href="https://github.com/Ashutosh-2109/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ashutosh-pandey-8468072b5/" target="_blank">LinkedIn</a>
+        </div>
+
+        <div class="scroll-indicator">⬇ Scroll</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science Engineering (Data Science) student at VIT Vellore.
+            I enjoy building backend systems, working with data, and creating interactive
+            web experiences that combine performance with clean design.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="card">Python</div>
+            <div class="card">C / C++</div>
+            <div class="card">Java</div>
+            <div class="card">Machine Learning</div>
+            <div class="card">Backend Development</div>
+            <div class="card">Data Science</div>
+        </div>
+    </section>
+
+    <!-- PROFILES -->
+    <section class="profiles">
+        <h2>Find Me Online</h2>
+        <div class="profile-cards">
+            <div class="profile-card"
+                 onclick="window.open('https://github.com/Ashutosh-2109/')">
+                <h3>GitHub</h3>
+                <p>@Ashutosh-2109</p>
+            </div>
+
+            <div class="profile-card"
+                 onclick="window.open('https://www.linkedin.com/in/ashutosh-pandey-8468072b5/')">
+                <h3>LinkedIn</h3>
+                <p>Ashutosh Pandey</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D SECTION -->
+    <section class="three-container">
+        <h2>Interactive 3D Component</h2>
+        <div id="three-scene"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Ashutosh Pandey</p>
+        <div class="footer-links">
+            <a href="https://github.com/Ashutosh-2109/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ashutosh-pandey-8468072b5/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="three.js"></script>
+
+</body>
+</html>
