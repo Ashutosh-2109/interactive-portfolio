@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { motion, useSpring } from 'framer-motion';
 
 export default function CustomCursor() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
   // Use springs for smooth following effect
   const cursorX = useSpring(0, { stiffness: 400, damping: 25 });
@@ -13,7 +12,6 @@ export default function CustomCursor() {
     document.documentElement.style.cursor = 'none';
 
     const updateMousePosition = (e: MouseEvent) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
       // Center the emoji (approx 32px width/height, so offset by 16)
       cursorX.set(e.clientX - 16);
       cursorY.set(e.clientY - 16);
