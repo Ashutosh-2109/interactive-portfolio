@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
-import { Box, Sphere, RoundedBox, Environment, Plane } from '@react-three/drei';
+import { Box, Sphere, RoundedBox, Environment, Plane, Text } from '@react-three/drei';
 import * as THREE from 'three';
 import { useAppStore } from '../store';
 
@@ -100,6 +100,19 @@ const Robot = () => {
       <RoundedBox args={[0.3, 1, 0.3]} radius={0.1} smoothness={4} position={[0.8, -0.1, 0]} rotation={[0, 0, 0.2]}>
         <meshStandardMaterial color="#ffffff" roughness={0.2} metalness={0.8} />
       </RoundedBox>
+
+      {/* Greeting Text */}
+      {phase !== 'landing' && (
+        <Text
+          position={[1.2, 2.2, 0]}
+          fontSize={0.4}
+          color="#00ffcc"
+          anchorX="center"
+          anchorY="middle"
+        >
+          Hi!
+        </Text>
+      )}
     </group>
   );
 };
